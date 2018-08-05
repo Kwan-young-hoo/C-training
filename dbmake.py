@@ -33,7 +33,7 @@ if __name__ == "__main__":
     for i in range(1, 818):
         data_1 = lotto(i)
 
-        con = sqlite3.connect("d:\myprojects\lotto1.db")
+        con = sqlite3.connect("d:/myprojects/tutorial/lotto.db")
 
         data_1.to_sql('lent', con, if_exists='append', index=False)
 
